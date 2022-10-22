@@ -21,9 +21,12 @@
         'database' => env('MG_DATABASE', 'penjualan'), // required with Mongo 3+
       ],
     ],
+    'default' => env('DB_CONNECTION', 'mongodb'),
 5. Konfigurasi file .env
     MG_HOST=127.0.0.1
     MG_PORT=27017
     MG_DATABASE=penjualan
     MG_USERNAME=root
     MG_PASSWORD=123456
+6. 
+
