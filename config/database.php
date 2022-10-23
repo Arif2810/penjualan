@@ -93,14 +93,14 @@ return [
 
         'mongodb' => [
             'driver' => 'mongodb',
-            'host' => env('MG_HOST', '127.0.0.1'),
-            'port' => env('MG_PORT', 27017),
-            'database' => env('MG_DATABASE', 'penjualan'),
-            'username' => env('MG_USERNAME', 'root'),
-            'password' => env('MG_PASSWORD', '123456'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '27017'),
+            'database' => env('DB_DATABASE', 'penjualan'),
+            'username' => env('DB_USERNAME', ''),
+            'password' => env('DB_PASSWORD', ''),
             'options' => [
-                'database' => env('MG_DATABASE', 'penjualan'), // required with Mongo 3+
-            ],
+                'database' => env('DB_DATABASE', 'penjualan'),
+            ]
         ],
 
     ],
